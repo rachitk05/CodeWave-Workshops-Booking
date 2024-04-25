@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6f6ae48fb3.js" crossorigin="anonymous"></script>
+  <title>CodeWave</title>
+</head>
+<body>
+  <!-- first page -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2 class="codewave">CodeWave</h2>
+      <h1 class="hero-title">Tech Innovators <br> DevHub</h1>
+      <p class="hero-p">Empowering Tech Enthusiasts with Cutting-Edge Skills.</p>
+      <button class="hero-button button-active" type="button" onclick="location.href='./booking.html'">BOOK YOUR SPOT</button>
+    </div>
+  </section>
+
+  <!-- second page -->
+  <section class="info-section">
+    <div class="info-cards info-card-one">
+      <div class="info-img shadow" id="info-img-first"></div>
+      <div class="info-card-content" id="info-card-content-one">
+        <img src="./images/patterns/pattern-divide.svg" alt="pattern divider" class="pattern-divider">
+        
+        <h2 class="info-title">Coding for All: Embrace Diversity</h2>
+    
+        <p class="info-p">Join our inclusive workshops where creativity meets technology. Everyone is welcome, regardless of age or background!</p>
+      </div>
+    </div>
+
+    <img src="./images/patterns/pattern-lines.svg" alt="Six horizontal stripes" class="info-stripes" />
+    <div class="info-cards info-card-two">
+      <div class="info-img shadow" id="info-img-second"></div>
+      <div class="info-card-content" id="info-card-content-two">
+        <img src="./images/patterns/pattern-divide.svg" alt="patter divider" class="pattern-divider">
+        
+        <h2 class="info-title">Diverse Participants: Unified Learning</h2>
+    
+        <p class="info-p">Explore the world of coding in a vibrant, inclusive environment where everyone belongs. We welcome participants from all walks of life, regardless of age, background, or skill level.</p>
+      </div>
+      </div>
+  </section>
+
+  <!-- third page -->
+  <section class="menu-section">
+    <div class="menu-card">
+      <div class="menu-intro">
+        <img src="./images/patterns/pattern-divide.svg" alt="patter divider" class="pattern-divider">
+        <h2 class="menu-title">A few highlights from our curriculum</h2>
+        <p class="menu-p">We adapt to all learning styles, but here’s a look at some of our curriculum highlights. This is updated regularly to stay ahead of the latest trends in coding and AI.</p>
+      </div>
+
+      <div class="menu-list">
+        <div class="menu-item">
+          <div id="menu-item-one" class="menu-img menu-item-layout"></div>
+          <div class="menu-content">
+            <h3 class="dish-title">Hands-On Coding Projects</h3>
+            <p class="dish-p">Experience coding through real-world projects tailored to your learning pace.</p>
+          </div>        
+        </div>
+
+        <div class="menu-item">
+          <div id="menu-item-two" class="menu-img menu-item-layout"></div>
+          <div class="menu-content">
+            <h3 class="dish-title">Introduction to AI and Machine Learning</h3>
+            <p class="dish-p">Dive into the fundamentals of artificial intelligence and machine learning, understanding how these technologies drive today's innovations.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div id="menu-item-three" class="menu-img menu-item-layout"></div>
+          <div class="menu-content">
+            <h3 class="dish-title">Customized Learning Paths in AI Development</h3>
+            <p class="dish-p">Tailor your educational journey with customized modules that align with your interests and career goals in AI.</p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  
+  <!-- fourth page -->
+  <section class="events-section">
+    <img src="./images/patterns/pattern-lines.svg" alt="Six horizontal stripes" class="event-stripes" />
+
+    <div class="events-container">
+      <div class="event-images ">
+        <div id="event-family" class="event-image events-layout"></div>
+        <div id="event-special" class="event-image events-layout"></div>
+        <div id="event-social" class="event-image events-layout"></div>
+      </div>
+
+      <ul class="event-list-container">
+          <li class="event-list-item active" onclick="showEvent(event, 'event-family', 'event-family-details')">Workshop Culture</li>
+          <li class="event-list-item" onclick="showEvent(event, 'event-special', 'event-special-details')">Guest Lectures</li>
+          <li class="event-list-item" onclick="showEvent(event, 'event-social', 'event-social-details')">Networking opportunities</li>
+      </ul>
+
+      <div class="event-details" id="event-family-details">
+        <h2>Workshop Culture</h2>
+        <p>Experience a dynamic and interactive learning atmosphere filled with cutting-edge technology and tools, designed to foster creativity and innovation in every session.</p>
+        <button class="event-button button-active" type="button" onclick="location.href='./booking.html'">Book Your Spot</button>
+      </div>
+
+      <div class="event-details" id="event-special-details">
+        <h2>Guest Lectures</h2>
+        <p>Dive deeper with masterclasses and guest lectures from industry leaders in coding and AI, providing insights into emerging trends and real-world applications.</p>
+        <button class="event-button button-active" type="button" onclick="location.href='./booking.html'">Book Your Spot</button>
+      </div>
+
+      <div class="event-details" id="event-social-details">
+        <h2>Networking</h2>
+        <p> Connect with peers, mentors, and professionals through structured networking events and collaborative projects, enhancing your professional network and opening doors to career opportunities.</p>
+        <button class="event-button button-active" type="button" onclick="location.href='./booking.html'">Book Your Spot</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- fifth page -->
+  <section class="reservation-section">
+    <h1>Ready to surf  at CodeWave?</h1>
+    <button type="button" onclick="location.href='./booking.html'" class="button-active">Book Your Spot Now!</button>
+  </section>
+  
+  <!-- sixth page -->
+  <footer>
+    <div class="footer">
+        <div class="left-footer">
+            <h3 class="footer-title">About CodeWave</h3>
+            <p class="footer-p">At CodeWave, our mission is to empower individuals through top-tier coding and AI education, delivered by expert instructors, aiming to equip participants with cutting-edge skills for technological innovation and career success.</p>
+            <br>
+            <div class="contact">
+                <div class="contact-info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>CodeWave, New Delhi, India.</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 6398935305</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>code@codewave.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-footer">
+            <div class="contact-us-form">
+                <h3>Contact CodeWave</h3>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" id="name" required>
+                    <input type="email" name="email" placeholder="Your Email" id="email" required>
+                    <textarea name="message" id="message" cols="30" rows="7" placeholder="Your Message"></textarea>
+                    <button id="send">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="copyright"><i class="fa-regular fa-copyright"></i> 2024 CodeWave. All rights reserved.</p>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>

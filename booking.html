@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/6f6ae48fb3.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Book | CodeWave</title>
+</head>
+<body>
+  <section class="hero-booking-section">
+    <div class="hero-booking-text">
+      <h2 class="codewave">CodeWave</h2>
+      
+        <div>
+          <h1 class="hero-booking-subtitle">Booking</h1>
+          <p class="hero-booking-paragraph">
+            We're excited to welcome you! If you have any specific needs, please don't hesitate to contact us at the phone number listed below. <br><br> We're here to ensure your experience is tailored just for you.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="form-section">
+      <div class="form-container">
+      <form action="#" class="booking-form shadow" id="booking-form">
+        <div id="name-input-container" required>
+          <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+
+        <div id="email-input-container">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <br>
+        
+        <div class="form-flex-container" id="date-input-container">
+          <p class="flex-heading date-heading" id="date-heading">Pick a date</p>
+          <div class="form-date">
+            <input type="number" name="month" id="month" placeholder="MM" required  min="01" max="12">
+            <input type="number" name="day" id="day" placeholder="DD" required min="01" max="31">
+            <input type="number" name="year" id="year" placeholder="YYYY" required min="2024">
+          </div>
+        </div>
+          <br>
+        <div class="form-flex-container time-container" id="time-input-container">
+        <p class="flex-heading" id="time-heading">Pick a time</p>
+        <div class="form-time">
+          <input type="number" name="hours" id="hours" placeholder="09" required min="01" max="12"> :
+          <input type="number" name="minutes" id="minutes" placeholder="00" required min="00" max="59">
+          <select name="dayNight" id="dayNight" required>
+            <option value="AM" selected>AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+
+        <div class="guests">
+          <button id="minus-guest-button">-</button>
+          <p><span id="guest-number">4</span> people</p>
+          <button id="plus-guest-button">+</button>
+        </div>
+          <button class="reservation-button button-active">Book Your Spot Now!</button>
+      </form>
+    </div>
+    <img src="./images/patterns/pattern-lines.svg" alt="Six horizontal stripes" class="form-stripes" />
+  </section>
+  
+  <script src="./booking.js"></script>
+</body>
+</html>
